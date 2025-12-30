@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../img/logo.png') no-repeat center;
+  background-size: 400px;
+}
+
+/* Wrapper tengah */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Box login */
+.login-box {
+  background: white;
+  padding: 35px;
+  width: 320px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* Judul */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #1b4332;
+}
+
+/* Input */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #1b4332;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #2d6a4f;
+}
+
+/* Error */
+.error {
+  background: #ffe5e5;
+  color: #b00000;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('../img/logo.png') no-repeat center;
+  background-size: 350px;
+}
+
+/* wrapper */
+.admin-wrapper{
+  padding: 40px;
+}
+
+/* judul tengah */
+h1{
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* logout */
+.logout{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logout a{
+  color: white;
+  background: #b00000;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout a:hover{
+  background: #d00000;
+}
+
+/* table box */
+.table-box{
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+  overflow-x: auto;
+}
+
+/* table */
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th{
+  background: #1b4332;
+  color: white;
+}
+
+td a{
+  color: #1b4332;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+td a:hover{
+  text-decoration: underline;
+}

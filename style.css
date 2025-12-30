@@ -1,0 +1,236 @@
+/* =====================
+   RESET & GLOBAL
+===================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(27, 67, 50, 0.95);
+  backdrop-filter: blur(6px);
+  padding: 12px 30px;
+  z-index: 100;
+}
+
+nav img {
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+nav b {
+  color: #fff;
+  font-size: 22px;
+}
+
+nav a {
+  color: #e9ecef;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #95d5b2;
+}
+
+/* =====================
+   HERO VIDEO
+===================== */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  letter-spacing: 6px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* =====================
+   CTA BUTTON
+===================== */
+.cta-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+/* =====================
+   RUNNING TEXT
+===================== */
+.running-text {
+  background: #1b4332;
+  color: white;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.running-text p {
+  white-space: nowrap;
+  animation: berjalan 20s linear infinite;
+}
+
+@keyframes berjalan {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* =====================
+   SECTION
+===================== */
+section {
+  padding: 80px 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1b4332;
+}
+
+/* =====================
+   CARD KEUNTUNGAN
+===================== */
+.card {
+  width: 220px;
+  background: white;
+  padding: 18px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* =====================
+   PRICE LIST
+===================== */
+.pricelist {
+  max-width: 700px;
+  margin: auto;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 22px 22px;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.price-left h3 {
+  margin: 0;
+  color: #1b4332;
+}
+
+.price-left p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.price-right {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+/* =====================
+   ATURAN
+===================== */
+#aturan ul {
+  max-width: 520px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#aturan li {
+  margin-bottom: 10px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: #1b4332;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+.menu a {
+  background: #1e3d2b;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-right: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu a:hover {
+  background: #2f6b4f;
+}
